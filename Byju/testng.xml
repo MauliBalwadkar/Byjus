@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="2" parallel="tests">
+  <test thread-count="2" name="chromeTest" parallel = "classes">
+	  <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="TestPacakage.TestNg"/>
+      <class name="TestPacakage.VerifyByjusAnswerModuleTestNG"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <test thread-count="2" name="edgeTest" parallel = "classes">
+	  <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="TestPacakage.TestNg"/>
+      <class name="TestPacakage.VerifyByjusAnswerModuleTestNG"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  
+</suite> <!-- Suite -->
